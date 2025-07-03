@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crazy Chicken Teater</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #FFF9DB; /* Ljusgul bakgrund */
+      color: #1A3C34; /* Mörkgrön text */
+    }
+    .btn {
+      background-color: #4CAF50; /* Grön knapp */
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #45a049;
+    }
+    header, footer {
+      background-color: #FFC107; /* Gul header/footer */
+      color: #1A3C34;
+    }
+    nav a:hover {
+      color: #45a049;
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="p-4 text-center">
+    <h1 class="text-4xl font-bold">Crazy Chicken Teater</h1>
+    <p class="mt-2 text-lg">Välkommen till en värld av skratt och dramatik!</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-gray-100 p-4">
+    <ul class="flex justify-center space-x-4">
+      <li><a href="#home" class="text-lg font-semibold hover:underline">Hem</a></li>
+      <li><a href="#about" class="text-lg font-semibold hover:underline">Om oss</a></li>
+      <li><a href="#shows" class="text-lg font-semibold hover:underline">Föreställningar</a></li>
+      <li><a href="#booking" class="text-lg font-semibold hover:underline">Boka</a></li>
+      <li><a href="#contact" class="text-lg font-semibold hover:underline">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="py-12 text-center fade-in">
+    <h2 class="text-3xl font-bold">Välkommen till Crazy Chicken!</h2>
+    <p class="mt-4 max-w-2xl mx-auto">
+      Upplev teater som aldrig förr! Våra föreställningar blandar humor, drama och galenskap.
+      Boka din plats idag och bli en del av äventyret!
+    </p>
+    <a href="#booking" class="btn mt-4 inline-block">Boka nu</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-12 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center">Om oss</h2>
+      <p class="mt-4 text-lg">
+        Crazy Chicken Teater grundades 2023 med en vision att skapa unika och underhållande
+        föreställningar. Vi är en grupp passionerade skådespelare och kreatörer som älskar att
+        sprida glädje genom teaterkonsten.
+      </p>
+    </div>
+  </section>
+
+  <!-- Shows Section -->
+  <section id="shows" class="py-12">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center">Kommande föreställningar</h2>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-4 bg-white rounded-lg shadow-md fade-in">
+          <h3 class="text-xl font-semibold">Crazy Chicken</h3>
+          <p class="mt-2">Datum: 03 juli 2025, Kan börja mellan 17:30-20:00</p>
+          <p>Allt möjligt kan ni se här!</p>
+          <a href="#booking" class="btn mt-4 inline-block">Boka</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="py-12 bg-gray-100">
+    <div class="max-w-lg mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center">Boka din plats</h2>
+      <p class="mt-6 text-lg text-center">
+        För att boka platser till våra föreställningar, kontakta oss.
+      </p>
+      <a href="#contact" class="btn mt-4 inline-block mx-auto">Gå till kontakt</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold">Kontakta oss</h2>
+      <p class="mt-4">Kontakta oss på hemsidan</p>
+      <p>Adress: Östra Järnvägsgatan 11</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-4 text-center">
+    <p>© 2025 Crazy Chicken Teater. Alla rättigheter förbehållna.</p>
+  </footer>
+
+  <script>
+    // Enkel JavaScript för att hantera navigeringens scroll
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+<!-- Start of LiveChat (www.livechat.com) code -->
+<script>
+    window.__lc = window.__lc || {};
+    window.__lc.license = 19222097;
+    window.__lc.integration_name = "manual_channels";
+    window.__lc.product_name = "livechat";
+    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+</script>
+<noscript><a href="https://www.livechat.com/chat-with/19222097/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+<!-- End of LiveChat code -->
+</body>
+</html>
